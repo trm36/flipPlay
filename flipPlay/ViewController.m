@@ -82,30 +82,6 @@
 {
     if (self.isFlipped)
     {
-//        [UIView transitionFromView:self.redView toView:self.blueView duration:.5 options:UIViewAnimationOptionTransitionFlipFromLeft completion:^(BOOL finished) {
-//            self.isFlipped = NO;
-//        }];
-        
-//        [UIView transitionWithView:self.redView
-//                          duration:1
-//                           options:UIViewAnimationOptionTransitionFlipFromLeft
-//                        animations:^{
-//                            [self.blueView removeFromSuperview];
-//                            [self.view addSubview:self.redView];
-//                            [self.redView addGestureRecognizer:self.doubleTap];}
-//                        completion:^(BOOL finished) {
-//                            self.isFlipped = NO;
-//                        }];
-        
-//        [UIView transitionWithView:self.blueView duration:0.65
-//                           options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
-//                               
-//                               self.blueView.hidden = YES;
-//                           } completion:^(BOOL finished) {
-//                               self.redView.hidden = NO;
-//                               self.isFlipped = !self.isFlipped;
-//                           }];
-        
         [UIView transitionFromView:self.blueView toView:self.redView duration:1.0 options:UIViewAnimationOptionTransitionFlipFromLeft | UIViewAnimationOptionShowHideTransitionViews completion:^(BOOL finished) {
             self.isFlipped = !self.isFlipped;
             [self.redView addGestureRecognizer:self.doubleTap];
@@ -115,29 +91,6 @@
     }
     else
     {
-//        [UIView transitionFromView:self.blueView toView:self.redView duration:.5 options:UIViewAnimationOptionTransitionFlipFromRight completion:^(BOOL finished) {
-//            self.isFlipped = YES;
-//        }];
-        
-//        [UIView transitionWithView:self.blueView
-//                          duration:1
-//                           options:UIViewAnimationOptionTransitionFlipFromRight
-//                        animations:^{
-//                            [self.redView removeFromSuperview];
-//                            [self.view addSubview:self.blueView];
-//                            [self.blueView addGestureRecognizer:self.doubleTap];}
-//                        completion:^(BOOL finished) {
-//                            self.isFlipped = YES;
-//                        }];
-        
-//        [UIView transitionWithView:self.redView duration:0.65
-//                           options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
-//                               self.blueView.hidden = NO;
-//                               self.redView.hidden = YES;
-//                           } completion:^(BOOL finished) {
-//                               self.isFlipped = !self.isFlipped;
-//                           }];
-        
         [UIView transitionFromView:self.redView toView:self.blueView duration:1.0 options:UIViewAnimationOptionTransitionFlipFromRight | UIViewAnimationOptionShowHideTransitionViews completion:^(BOOL finished) {
             self.isFlipped = !self.isFlipped;
             [self.blueView addGestureRecognizer:self.doubleTap];
