@@ -414,6 +414,7 @@
 				342C03471AB8D67600D07621 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		342C03481AB8D67600D07621 /* Build configuration list for PBXNativeTarget "flipPlayTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +423,7 @@
 				342C034A1AB8D67600D07621 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
